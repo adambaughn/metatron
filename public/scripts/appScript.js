@@ -1,10 +1,10 @@
 ﻿const path = require("path");
 const events = require("events");
 const readline = require("readline");
-const fs = require("fs");
 const cp = require("child_process");
 
 function createFile (textInput, nameInput) {
+    const fs = require("fs");
     var textAreaInput = textInput;
     var fileNameInput = nameInput;
 
