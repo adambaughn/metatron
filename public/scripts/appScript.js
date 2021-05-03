@@ -7,13 +7,12 @@ const cp = require("child_process");
 function createFile (textInput, nameInput) {
     var textAreaInput = textInput;
     var fileNameInput = nameInput;
-    var fileSavedText = document.getElementById("fileSaved");
 
     fs.writeFile(`./assets/${fileNameInput}.md`, textAreaInput.trim(), err => {
         if (err) {
             throw err;
         }
-        fileSavedText = nameInput;
+        document.getElementById('fileSaved') = `The file was saved as ${fileNameInput}`;
     });
 
 }
