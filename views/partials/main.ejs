@@ -1,12 +1,13 @@
 <div id ="appInput">
     <form id="">
-        <label for="essentialTraining_textarea">Input text to write it to a file</label>
+        <label for="essentialTraining_textarea" id="textAreaLabel_essential">Input text to write it to a file</label>
+        <br>
         <textarea id="essentialTraining_textarea" name="essentialTraining_textarea" cols="100" rows="20" placeholder="Add text to be placed into the file here"></textarea>
         <br>
-        <label for="fileName" id="FileName">Name: </label>
+        <label for="nameInput" id="nameInputLabel_essential">Name: </label>
         <input type="text" id="nameInput" placeholder="Name Your File" size="58" required>
         <br>
-        <button onclick="createFile(essentialTraining_textarea.value, nameInput.value)">Create File</button>
+        <button onclick="createFile()">Create File</button>
     </form>
 </div>
 
